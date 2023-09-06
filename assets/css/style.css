@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 html,body{
     height: 100vh;
@@ -42,10 +43,18 @@ iframe#tela{
     height: 471px;
 }
 #redes-social{
-   display: block;
+    text-align: right;
 }
-img{
+#redes-social img{
     width: 50px;
-    border-radius: 100%;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
 }
-
+#redes-social img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.684);
+    transform: translate(-3px,-3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.400);
+    transition: transform 1s;
+}
